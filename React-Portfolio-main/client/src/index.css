@@ -229,12 +229,12 @@
   .hero-terminal-shell {
     margin-top: 1rem !important;
     padding-right: 0 !important;
-    overflow: visible;
+    overflow-x: clip;
   }
 
   .hero-terminal-card {
-    width: min(100%, 360px) !important;
-    max-width: calc(100vw - 2rem) !important;
+    width: min(100%, 340px) !important;
+    max-width: calc(100vw - 3rem) !important;
     flex-shrink: 1 !important;
     margin-inline: auto;
     min-height: 0 !important;
@@ -257,6 +257,42 @@
     max-width: 100%;
     overflow-wrap: anywhere;
     word-break: break-word;
+  }
+
+  .fixed.bottom-5.left-1\/2.z-50 {
+    width: calc(100vw - 1rem);
+    max-width: 340px;
+    bottom: calc(0.75rem + env(safe-area-inset-bottom, 0px)) !important;
+  }
+
+  .fixed.bottom-5.left-1\/2.z-50 > div {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0.35rem 0.45rem !important;
+  }
+
+  .fixed.bottom-5.left-1\/2.z-50 > div > div {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .fixed.bottom-5.left-1\/2.z-50 a,
+  .fixed.bottom-5.left-1\/2.z-50 button {
+    flex-shrink: 0;
+    padding: 0.42rem !important;
+  }
+
+  .fixed.bottom-5.left-1\/2.z-50 .px-2 {
+    padding-inline: 0.2rem !important;
+  }
+
+  main {
+    padding-bottom: calc(5.5rem + env(safe-area-inset-bottom, 0px));
+  }
+
+  footer {
+    padding-bottom: calc(5.5rem + env(safe-area-inset-bottom, 0px));
   }
 
   #projects .container {
@@ -282,11 +318,21 @@
 
 @media (max-width: 380px) {
   .hero-terminal-card {
-    max-width: calc(100vw - 1.5rem) !important;
-    transform: translateX(0) scale(0.86) !important;
+    max-width: calc(100vw - 2rem) !important;
+    transform: translateX(0) scale(0.84) !important;
   }
 
   .hero-terminal-card > div {
     min-height: 420px !important;
+  }
+
+  .fixed.bottom-5.left-1\/2.z-50 {
+    width: calc(100vw - 0.75rem);
+    max-width: 320px;
+  }
+
+  .fixed.bottom-5.left-1\/2.z-50 a,
+  .fixed.bottom-5.left-1\/2.z-50 button {
+    padding: 0.36rem !important;
   }
 }
