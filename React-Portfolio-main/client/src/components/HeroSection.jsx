@@ -187,7 +187,7 @@ export const HeroSection = () => {
             >
               <span className="block text-foreground">I&apos;m Nitin</span>
               <motion.span
-                className="flex items-center justify-center lg:justify-start min-h-[1.2em] w-full min-w-[18ch] whitespace-nowrap bg-gradient-to-r from-primary via-purple-600 to-pink-600 bg-clip-text text-transparent mt-2"
+                className="hero-role-text flex items-center justify-center lg:justify-start min-h-[1.2em] w-full min-w-[18ch] whitespace-nowrap bg-gradient-to-r from-primary via-purple-600 to-pink-600 bg-clip-text text-transparent mt-2"
                 animate={{ backgroundPosition: ["0%", "100%", "0%"] }}
                 transition={{ duration: 8, repeat: Infinity }}
                 style={{ backgroundSize: "200% 100%" }}
@@ -276,10 +276,10 @@ export const HeroSection = () => {
           </div>
 
           <motion.div
-            className="flex-1 flex justify-center items-center w-full mt-[-20px] overflow-visible pr-5 max-lg:pr-0"
+            className="hero-terminal-shell flex-1 flex justify-center items-center w-full mt-[-20px] overflow-visible pr-5 max-lg:pr-0"
             variants={{ hidden: { y: 30, opacity: 0 }, visible: { y: 0, opacity: 1, transition: { duration: 0.8 } } }}
           >
-            <div className="relative w-full max-w-[520px] min-h-[560px] flex-shrink-0 scale-[0.90] lg:scale-[0.92] xl:scale-[0.95] translate-x-[120px] overflow-visible">
+            <div className="hero-terminal-card relative w-full max-w-[520px] min-h-[560px] flex-shrink-0 scale-[0.90] lg:scale-[0.92] xl:scale-[0.95] translate-x-[120px] overflow-visible">
               <motion.div
                 className="w-full min-h-[560px] group transition-all duration-500 overflow-hidden flex flex-col p-5"
                 style={{
