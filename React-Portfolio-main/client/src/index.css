@@ -229,6 +229,7 @@
   .hero-terminal-shell {
     margin-top: 1rem !important;
     padding-right: 0 !important;
+    justify-content: center !important;
     overflow-x: clip;
   }
 
@@ -238,6 +239,7 @@
     flex-shrink: 1 !important;
     margin-inline: auto;
     min-height: 0 !important;
+    translate: 0 0 !important;
     transform: translateX(0) scale(0.92) !important;
     transform-origin: center top;
   }
@@ -319,6 +321,7 @@
 @media (max-width: 380px) {
   .hero-terminal-card {
     max-width: calc(100vw - 2rem) !important;
+    translate: 0 0 !important;
     transform: translateX(0) scale(0.84) !important;
   }
 
